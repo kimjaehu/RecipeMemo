@@ -14,6 +14,17 @@ const assets = [
   '/pages/fallback.html'
 ];
 
+// cache size limit
+const cacheSizeLimit = (name, size) => {
+  caches.open(name).then(cache => {
+    cache.keys().then(keys => {
+      if (keys.length > size) {
+        cache.delete(keys[0]).then(cacheSizeLimit(name, size));
+      }
+    });
+  });
+};
+
 // service worker: install event
 self.addEventListener('install', e => {
   // console.log('service worker has been installed');
@@ -51,11 +62,16 @@ self.addEventListener('fetch', e => {
           fetch(e.request).then(fetchRes => {
             return caches.open(dynamicCache).then(cache => {
               cache.put(e.request.url, fetchRes.clone());
+              cacheSizeLimit(dynamicCache, 15);
               return fetchRes;
             });
           })
         );
       })
-      .catch(() => caches.match('/pages/fallback.html'))
+      .catch(() => {
+        if (e.request.url.indexOf('.html') > -1) {
+          return caches.match('/pages/fallback.html');
+        }
+      })
   );
 });
