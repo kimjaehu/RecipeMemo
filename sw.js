@@ -10,7 +10,8 @@ const assets = [
   '/css/materialize.min.css',
   '/img/recipe.png',
   'https://fonts.googleapis.com/icon?family=Material+Icons',
-  'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2'
+  'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
+  '/pages/fallback.html'
 ];
 
 // service worker: install event
@@ -30,7 +31,9 @@ self.addEventListener('activate', e => {
   e.waitUntil(
     caches.keys().then(keys => {
       return Promise.all(
-        keys.filter(key => key !== cacheStatic).map(key => caches.delete(key))
+        keys
+          .filter(key => key !== cacheStatic && key !== dynamicCache)
+          .map(key => caches.delete(key))
       );
     })
   );
@@ -40,16 +43,19 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   // console.log('fetch event', e);
   e.respondWith(
-    caches.match(e.request).then(cacheRes => {
-      return (
-        cacheRes ||
-        fetch(e.request).then(fetchRes => {
-          return caches.open(dynamicCache).then(cache => {
-            cache.put(e.request.url, fetchRes.clone());
-            return fetchRes;
-          });
-        })
-      );
-    })
+    caches
+      .match(e.request)
+      .then(cacheRes => {
+        return (
+          cacheRes ||
+          fetch(e.request).then(fetchRes => {
+            return caches.open(dynamicCache).then(cache => {
+              cache.put(e.request.url, fetchRes.clone());
+              return fetchRes;
+            });
+          })
+        );
+      })
+      .catch(() => caches.match('/pages/fallback.html'))
   );
 });
