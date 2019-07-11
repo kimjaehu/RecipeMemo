@@ -1,5 +1,5 @@
-const cacheStatic = 'site-static-v1';
-const dynamicCache = 'site-dynamic-v1';
+const cacheStatic = 'site-static-v2';
+const dynamicCache = 'site-dynamic-v2';
 const assets = [
   '/',
   '/index.html',
@@ -51,27 +51,27 @@ self.addEventListener('activate', e => {
 });
 
 // service worker: fetch event
-self.addEventListener('fetch', e => {
-  // console.log('fetch event', e);
-  e.respondWith(
-    caches
-      .match(e.request)
-      .then(cacheRes => {
-        return (
-          cacheRes ||
-          fetch(e.request).then(fetchRes => {
-            return caches.open(dynamicCache).then(cache => {
-              cache.put(e.request.url, fetchRes.clone());
-              cacheSizeLimit(dynamicCache, 15);
-              return fetchRes;
-            });
-          })
-        );
-      })
-      .catch(() => {
-        if (e.request.url.indexOf('.html') > -1) {
-          return caches.match('/pages/fallback.html');
-        }
-      })
-  );
-});
+// self.addEventListener('fetch', e => {
+//   // console.log('fetch event', e);
+//   e.respondWith(
+//     caches
+//       .match(e.request)
+//       .then(cacheRes => {
+//         return (
+//           cacheRes ||
+//           fetch(e.request).then(fetchRes => {
+//             return caches.open(dynamicCache).then(cache => {
+//               cache.put(e.request.url, fetchRes.clone());
+//               cacheSizeLimit(dynamicCache, 15);
+//               return fetchRes;
+//             });
+//           })
+//         );
+//       })
+//       .catch(() => {
+//         if (e.request.url.indexOf('.html') > -1) {
+//           return caches.match('/pages/fallback.html');
+//         }
+//       })
+//   );
+// });
