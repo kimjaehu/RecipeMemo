@@ -1,4 +1,4 @@
-const recipes =  document.querySelector('.recipes')
+const recipes = document.querySelector('.recipes');
 
 document.addEventListener('DOMContentLoaded', function() {
   // nav menu
@@ -26,5 +26,11 @@ const renderRecipe = (data, id) => {
     </div>
   `;
 
-  recipes.innerHTML += html
+  recipes.innerHTML += html;
+};
+
+// remove recipe from DOM
+const removeRecipe = id => {
+  const recipe = document.querySelector(`.recipe[data-id = ${id}]`);
+  recipe.remove();
 };
