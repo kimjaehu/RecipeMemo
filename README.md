@@ -18,21 +18,21 @@ Recipe Memo allows users to make a note of their own recipe and shre with other 
 
 ## Screenshots
 
-!["Recipe Memo Main Screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/initial.png)
+!["Recipe Memo Main Screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/mainpage.png?raw=true)
 
-!["Add to home screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/usernameChange.png)
+!["Add to home screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/add_automatically.png?raw=true)
 
-!["Add automatically"](https://github.com/kimjaehu/chattyapp/blob/master/docs/usermessage.png)
+!["Add automatically"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/add_automatically.png?raw=true)
 
-!["App icon added to home screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/differentcolor.png)
+!["App icon added to home screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/icon_added_to_home_screen.png?raw=true)
 
-!["Loading screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage.png)
+!["Loading screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/loading_screen.png?raw=true)
 
-!["Add recipe"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage2.png)
+!["Add recipe"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/add_recipe.png?raw=true)
 
-!["Recipe added"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage2.png)
+!["Recipe added"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/recipe_added.png?raw=true)
 
-!["Delete recipe"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage2.png)
+!["Delete recipe"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/recipe_deleted.png?raw=true)
 
 ## Acknowledgments
 
