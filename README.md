@@ -19,12 +19,19 @@ Recipe Memo allows users to make a note of their own recipe and shre with other 
 ## Screenshots
 
 !["Recipe Memo Main Screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/initial.png)
+
 !["Add to home screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/usernameChange.png)
+
 !["Add automatically"](https://github.com/kimjaehu/chattyapp/blob/master/docs/usermessage.png)
+
 !["App icon added to home screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/differentcolor.png)
+
 !["Loading screen"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage.png)
+
 !["Add recipe"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage2.png)
+
 !["Recipe added"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage2.png)
+
 !["Delete recipe"](https://raw.githubusercontent.com/kimjaehu/chattyapp/master/docs/imagemessage2.png)
 
 ## Acknowledgments
