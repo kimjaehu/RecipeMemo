@@ -19,28 +19,28 @@ Recipe Memo allows users to make a note of their own recipe and shre with other 
 ## Screenshots
 
 !["Recipe Memo Main Screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/mainpage.png?raw=true)
-Recipe Memo Main Screen
+###Recipe Memo Main Screen
 
 !["Add to home screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/add_automatically.png?raw=true)
-Add to home screen
+###Add to home screen
 
 !["Add automatically"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/add_automatically.png?raw=true)
-Add automatically
+###Add automatically
 
 !["App icon added to home screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/icon_added_to_home_screen.png?raw=true)
-App icon added to home screen
+###App icon added to home screen
 
 !["Loading screen"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/loading_screen.png?raw=true)
-Loading screen
+###Loading screen
 
 !["Add recipe"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/add_recipe.png?raw=true)
-Add recipe
+###Add recipe
 
 !["Recipe added"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/recipe_added.png?raw=true)
-Recipe added
+###Recipe added
 
 !["Delete recipe"](https://github.com/kimjaehu/RecipeMemo/blob/master/public/img/screenshots/recipe_deleted.png?raw=true)
-Delete recipe
+###Delete recipe
 
 ## Acknowledgments
 
